@@ -17,18 +17,17 @@ class TextFormState extends State<TextForm> {
           TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              labelText: 'Email',
-              fillColor: Colors.black,
+              labelText: "Email",
               hintText: 'Enter Email',
             ),
           ),
           SizedBox(
-            height: 30,
+            height: MediaQuery.of(context).size.height * .10,
           ),
           TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              labelText: "Password",
+              labelText: "password",
               hintText: "********",
             ),
           ),

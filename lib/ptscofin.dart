@@ -13,22 +13,19 @@ class Ptscofin extends StatelessWidget {
           overflow: Overflow.visible,
           children: [
             Positioned(
-              top: MediaQuery.of(context).size.height * .05,
-              left: MediaQuery.of(context).size.height * .02,
+              top: MediaQuery.of(context).size.height * .09,
+              left: MediaQuery.of(context).size.width * .02,
               child: Container(
                 color: Colors.white,
-                padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * .04,
-                ),
-                width: MediaQuery.of(context).size.width * .36,
-                height: MediaQuery.of(context).size.height * .12,
+                width: MediaQuery.of(context).size.width * .40,
+                height: MediaQuery.of(context).size.height * .08,
                 child: Center(
                   child: Text(
                     "PT SCOFIN   ",
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: MediaQuery.of(context).size.height * .039,
-                      wordSpacing: 10,
+                      wordSpacing: 5,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Scofin Font",
                     ),
@@ -37,7 +34,7 @@ class Ptscofin extends StatelessWidget {
               ),
             ),
             Positioned(
-              right: MediaQuery.of(context).size.width * .43,
+              right: MediaQuery.of(context).size.width * .42,
               top: MediaQuery.of(context).size.height * .06,
               child: Container(
                 width: MediaQuery.of(context).size.width * .15,
@@ -52,23 +49,18 @@ class Ptscofin extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height * .05,
-              right: MediaQuery.of(context).size.height / 100,
+              top: MediaQuery.of(context).size.height * .09,
+              right: MediaQuery.of(context).size.height * .01,
               child: Container(
                 color: Colors.white,
-                padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * .04,
-                  left: MediaQuery.of(context).size.width * .02,
-                ),
-                width: MediaQuery.of(context).size.width * .38,
-                height: MediaQuery.of(context).size.height * .12,
+                width: MediaQuery.of(context).size.width * .40,
+                height: MediaQuery.of(context).size.height * .08,
                 child: Center(
                   child: Text(
                     "INDONESIA  ",
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: MediaQuery.of(context).size.height * .039,
-                      wordSpacing: 10,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Scofin Font",
                     ),
@@ -78,15 +70,11 @@ class Ptscofin extends StatelessWidget {
             ),
             Positioned(
               top: MediaQuery.of(context).size.height * .20,
-              left: MediaQuery.of(context).size.width * .31,
+              left: MediaQuery.of(context).size.width * .30,
               child: Container(
                 color: Colors.white,
-                padding: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).size.height * .09,
-                  right: MediaQuery.of(context).size.width * .03,
-                ),
-                width: MediaQuery.of(context).size.width * .39,
-                height: MediaQuery.of(context).size.height * .13,
+                width: MediaQuery.of(context).size.width * .43,
+                height: MediaQuery.of(context).size.height * .07,
                 child: Center(
                   child: Text(
                     "(SCOFINDO) ",
@@ -101,9 +89,6 @@ class Ptscofin extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 30,
-            ),
             Positioned(
               top: MediaQuery.of(context).size.height * .80,
               left: MediaQuery.of(context).size.width * .15,
@@ -114,16 +99,14 @@ class Ptscofin extends StatelessWidget {
                 child: RaisedButton(
                   color: Colors.green,
                   shape: StadiumBorder(),
+                  splashColor: Colors.black,
+                  elevation: 8,
                   onPressed: () {
                     print("Login Button Presssed");
                   },
                   child: Text("LOGIN"),
                 ),
               ),
-            ),
-            Positioned(
-              top: MediaQuery.of(context).size.width * .70,
-              child: TextForm(),
             ),
           ],
         ),
