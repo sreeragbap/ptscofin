@@ -58,7 +58,7 @@ class Ptscofin extends StatelessWidget {
                 color: Colors.white,
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * .04,
-                  left: MediaQuery.of(context).size.width * .04,
+                  left: MediaQuery.of(context).size.width * .02,
                 ),
                 width: MediaQuery.of(context).size.width * .38,
                 height: MediaQuery.of(context).size.height * .12,
