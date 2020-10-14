@@ -18,6 +18,7 @@ class TextFormState extends State<TextForm> {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'Email',
+              fillColor: Colors.black,
               hintText: 'Enter Email',
             ),
           ),

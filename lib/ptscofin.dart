@@ -11,7 +11,7 @@ class Ptscofin extends StatelessWidget {
         color: Colors.white,
         child: Stack(
           overflow: Overflow.visible,
-          children: <Widget>[
+          children: [
             Positioned(
               top: MediaQuery.of(context).size.height * .05,
               left: MediaQuery.of(context).size.height * .02,
@@ -101,12 +101,11 @@ class Ptscofin extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              top: 250,
-              child: TextForm(),
+            SizedBox(
+              height: 30,
             ),
             Positioned(
-              bottom: MediaQuery.of(context).size.height * .20,
+              top: MediaQuery.of(context).size.height * .80,
               left: MediaQuery.of(context).size.width * .15,
               child: Container(
                 height: MediaQuery.of(context).size.height * .08,
@@ -121,6 +120,10 @@ class Ptscofin extends StatelessWidget {
                   child: Text("LOGIN"),
                 ),
               ),
+            ),
+            Positioned(
+              top: MediaQuery.of(context).size.width * .70,
+              child: TextForm(),
             ),
           ],
         ),

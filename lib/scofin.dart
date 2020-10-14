@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scofin/ptscofin.dart';
+import './ptscofin.dart';
 
 class Scofin extends StatelessWidget {
   @override
