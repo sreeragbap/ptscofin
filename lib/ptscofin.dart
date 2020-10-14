@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './textfrom.dart';
 
 class Ptscofin extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class Ptscofin extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color: Colors.pink,
+        color: Colors.white,
         child: Stack(
           overflow: Overflow.visible,
           children: <Widget>[
@@ -15,7 +16,7 @@ class Ptscofin extends StatelessWidget {
               top: MediaQuery.of(context).size.height * .05,
               left: MediaQuery.of(context).size.height * .02,
               child: Container(
-                color: Colors.yellow,
+                color: Colors.white,
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * .04,
                 ),
@@ -54,7 +55,7 @@ class Ptscofin extends StatelessWidget {
               top: MediaQuery.of(context).size.height * .05,
               right: MediaQuery.of(context).size.height / 100,
               child: Container(
-                color: Colors.purple,
+                color: Colors.white,
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * .04,
                   left: MediaQuery.of(context).size.width * .04,
@@ -79,7 +80,7 @@ class Ptscofin extends StatelessWidget {
               top: MediaQuery.of(context).size.height * .20,
               left: MediaQuery.of(context).size.width * .31,
               child: Container(
-                color: Colors.grey,
+                color: Colors.white,
                 padding: EdgeInsets.only(
                   bottom: MediaQuery.of(context).size.height * .09,
                   right: MediaQuery.of(context).size.width * .03,
@@ -101,18 +102,18 @@ class Ptscofin extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height * .50,
-              child: ListTile(
-                title: Text("Email"),
-                leading: Icon(Icons.email),
-                subtitle: Text("example@example.com"),
-              ),
+              top: 250,
+              child: TextForm(),
             ),
             Positioned(
-              top: 30,
+              bottom: MediaQuery.of(context).size.height * .20,
+              left: MediaQuery.of(context).size.width * .15,
               child: Container(
-                height: 100,
+                height: MediaQuery.of(context).size.height * .08,
+                width: MediaQuery.of(context).size.width * .70,
+                color: Colors.white,
                 child: RaisedButton(
+                  color: Colors.green,
                   shape: StadiumBorder(),
                   onPressed: () {
                     print("Login Button Presssed");
