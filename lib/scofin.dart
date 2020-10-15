@@ -6,7 +6,11 @@ class Scofin extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Ptscofin2(),
+        body: ListView(
+          children: <Widget>[
+            Ptscofin2(),
+          ],
+        ),
       ),
     );
   }
