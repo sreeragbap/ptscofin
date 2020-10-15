@@ -16,15 +16,15 @@ class Ptscofin extends StatelessWidget {
               top: MediaQuery.of(context).size.height * .09,
               left: MediaQuery.of(context).size.width * .02,
               child: Container(
-                color: Colors.white,
-                width: MediaQuery.of(context).size.width * .40,
+                color: Colors.red,
+                width: MediaQuery.of(context).size.width * .39,
                 height: MediaQuery.of(context).size.height * .08,
                 child: Center(
                   child: Text(
                     "PT SCOFIN   ",
                     style: TextStyle(
                       color: Colors.green,
-                      fontSize: MediaQuery.of(context).size.height * .039,
+                      fontSize: MediaQuery.of(context).size.width * .07,
                       wordSpacing: 5,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Scofin Font",
@@ -34,7 +34,7 @@ class Ptscofin extends StatelessWidget {
               ),
             ),
             Positioned(
-              right: MediaQuery.of(context).size.width * .42,
+              right: MediaQuery.of(context).size.width * .43,
               top: MediaQuery.of(context).size.height * .06,
               child: Container(
                 width: MediaQuery.of(context).size.width * .15,
@@ -52,7 +52,7 @@ class Ptscofin extends StatelessWidget {
               top: MediaQuery.of(context).size.height * .09,
               right: MediaQuery.of(context).size.height * .01,
               child: Container(
-                color: Colors.white,
+                color: Colors.red,
                 width: MediaQuery.of(context).size.width * .40,
                 height: MediaQuery.of(context).size.height * .08,
                 child: Center(
@@ -60,7 +60,7 @@ class Ptscofin extends StatelessWidget {
                     "INDONESIA  ",
                     style: TextStyle(
                       color: Colors.green,
-                      fontSize: MediaQuery.of(context).size.height * .039,
+                      fontSize: MediaQuery.of(context).size.width * .07,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Scofin Font",
                     ),
@@ -88,6 +88,10 @@ class Ptscofin extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            Positioned(
+              top: 250,
+              child: TextForm(),
             ),
             Positioned(
               top: MediaQuery.of(context).size.height * .80,
