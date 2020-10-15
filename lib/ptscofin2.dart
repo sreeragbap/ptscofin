@@ -13,7 +13,7 @@ class Ptscofin2 extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * .25,
-            color: Colors.blue,
+            color: Colors.white,
             child: Stack(
               children: <Widget>[
                 Positioned(
