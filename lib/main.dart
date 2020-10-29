@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import './scofin.dart';
+import 'package:scofin/scofin.dart';
+import 'package:scofin/whatsapp.dart';
+import './madline.dart';
 
 void main() {
   runApp(
-    Scofin(),
+    WhatsApp(),
   );
 }
